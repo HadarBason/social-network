@@ -4,23 +4,23 @@ simple social network server and  client. The communication between the server a
 How to run the code:
 server (JAVA): 2 kindes of servers:
 	1) Reactor Server:	
-      mvn clean
-			mvn package
-			cd target
-			java -cp spl-net-1.0-SNAPSHOT.jar bgu.spl.net.impl.BGSServer.ReactorMain 3 8888
+      		mvn clean
+		mvn package
+		cd target
+		java -cp spl-net-1.0-SNAPSHOT.jar bgu.spl.net.impl.BGSServer.ReactorMain 3 8888
 
 	2) Thread-Per-Client(TPC) Server:	
-      mvn clean
-			mvn package
-			cd target
-			java -cp spl-net-1.0-SNAPSHOT.jar bgu.spl.net.impl.BGSServer.TPCMain 7777
+      		mvn clean
+		mvn package
+		cd target
+		java -cp spl-net-1.0-SNAPSHOT.jar bgu.spl.net.impl.BGSServer.TPCMain 7777
 
 client (C++) :
 	BGSclient:	
-      make clean
-			make
-			cd bin
-			./BGSclient 127.0.0.1 <port>
+      		make clean
+		make
+		cd bin
+		./BGSclient 127.0.0.1 <port>
 
 The BGS protocol supports various commands needed in order to share posts and messages. 
 There are two types of commands, Server-to-Client and Client-to-Server. 

@@ -3,13 +3,14 @@ simple social network server and  client. The communication between the server a
 
 How to run the code:
 server (JAVA): 2 kindes of servers:
-	1) Reactor Server:	
+
+	* Reactor Server:	
       		mvn clean
 		mvn package
 		cd target
 		java -cp spl-net-1.0-SNAPSHOT.jar bgu.spl.net.impl.BGSServer.ReactorMain 3 8888
 
-	2) Thread-Per-Client(TPC) Server:	
+	* Thread-Per-Client(TPC) Server:	
       		mvn clean
 		mvn package
 		cd target
